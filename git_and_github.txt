@@ -1,54 +1,94 @@
-<!-- Git & GitHub -->
+<!-- GitHub -->
 
-$ git init
-~ Initialize a selected folder as Git ready
+# Follow these steps if you want to create a project and upload it to GitHub
+# Before you start, make sure you have Brew, Git, and SSH keys installed already
+# If you need help installing the tools, click on the link below:
+# https://github.com/ca2los/cheatcodes/install_git.txt
+_
 
-$ git status
-~ Action of looking for changes inside the folder to show the status
+# Attention:
+# 1st line with symbol "$" shows the single command(s)
+# 2nd line with symbol "~" explains the meaning of the command(s)
+# 3rd line with symbol "$" is the final command you must type/paste at the Terminal
+_
 
-$ git add
-~ Marks every listed file as ready to commit, only when new or edited files are detected
+1. In this How-To you will: 
+· Create a project in your computer (local)
+· Create a repository in your GitHub account.
+· Upload the project (local) into your GitHub new repository.
 
-$ git commit
-~ Confirms the files (previusly added) as ready to push
+    $ git init
+    ~ Initialize a selected folder as Git ready
 
-$ git push
-~ Upload the commited files into the repo 
+    $ git status
+    ~ Action of "looking for changes" inside the folder to show the status
 
-$ git rm --cached
-~ Remove a file already added and stored from the cached memory
-~ Ex. git rm --cached file_name_.ext
+    $ git add
+    ~ Marks every listed file as ready to commit, only when new or edited files are detected
 
-$ git branch
-~ Creates an alternative timeline from the master
-~ Ex. git branch branch_name
+    $ git commit
+    ~ Confirms the files (previusly added) as ready to push
 
-$ git checkout
-~ Switch on to the new branch or timeline
-~ Ex. git checkout branch_name
+    $ git remote add origin
+    ~ First you need to create a new repository in GitHub, assign a name to it and copy the url next to the Git commands
+    $ git remote add origin git_repo_ssh_url
 
-$ git chekcout master
-~ Switch back to the original branch or timeline
-~ Ex. git checkout branch_name
+    $ git push -u origin master
+    ~ Upload the committed files into the orign repo for the first time, from master branch to origin.
 
-$ git merge
-~ Merge a branch with the master
-~ Ex. git merge branch_name 
+        $ ssh-add
+        ~ Attenttion: Use it only when GitHub shows you "fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists." 
 
-$ git remote add origin
-~ First you need to create a new repository in GitHub, assign a name to it and copy the url next to the Git commands
-~ git remote add origin git_repo_url
 
-$ git push -u origin master
-~ Upload the commited files into the orign repo for the first time
+2. Now you have a repository in GitHub related to your computer (local): 
+· Create a file, make changes, create a .gitignore, and create a README.md
+· Once you got them ready, add, commit, and push changes to your repository
 
-    $ ssh-add
-    ~ Only when GitHub shows you:270286
-    "fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists." 
+    $ git status
+    ~ Action of "looking for changes" inside the folder to show the status
 
-$ git clone
-~ Download a project from GitHub into another folder of the computer
-~ Ex. git clone url_name
+    $ git add .
+    ~ Marks every listed file as ready to committed
 
-$ git pull
-~ Update your project (folder) with the most recent version of the repo
+        $ git rm --cached
+        ~ Remove a file already added and stored from the cached memory
+        $ Ex. git rm --cached file_name_.ext
+
+    $ git commit -m "..."
+    ~ Confirms the files (previusly added) as ready to push with a message to explain changes on files.
+    $ git commit -m "Type whatever you want, just make clear the changes you're making."
+
+    $ git push
+    ~ Upload all the branches commited files into the repository.
+
+
+3. You can create alternative branches: 
+· Switch between branches
+· Create different files between them
+· Merge branches with the master branch
+
+    $ git branch
+    ~ Creates an alternative branch (timeline) besides the master branch
+    $ git branch new_branch_name
+
+    $ git checkout
+    ~ Switch on to the new branch or timeline
+    $ git checkout new_branch_name
+
+    $ git chekcout master
+    ~ Switch back to the original branch or timeline
+    $ git checkout new_branch_name
+
+    $ git merge
+    ~ Merge a branch with the master
+    $ git merge new_branch_name
+
+
+4. You can download a repository from another owner/author into you computer (local)
+
+    $ git clone
+    ~ Download a project (fork) from GitHub into another folder of the computer
+    $ git clone url_name
+
+    $ git pull
+    $ Update your project (folder) with the most recent version of the repository
