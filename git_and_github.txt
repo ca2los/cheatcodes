@@ -1,0 +1,50 @@
+<!-- Git & GitHub -->
+
+$ git init
+~ Initialize a selected folder as Git ready
+
+$ git status
+~ Action of looking for changes inside the folder to show the status
+
+$ git add
+~ Marks every listed file as ready to commit, only when new or edited files are detected
+
+$ git commit
+~ Confirms the files (previusly added) as ready to push
+
+$ git push
+~ Upload the commited files into the repo 
+
+$ git rm --cached
+~ Remove a file already added and stored from the cached memory
+~ Ex. git rm --cached file_name_.ext
+
+$ git branch
+~ Creates an alternative timeline from the master
+~ Ex. git branch branch_name
+
+$ git checkout
+~ Switch on to the new branch or timeline
+~ Ex. git checkout branch_name
+
+$ git chekcout master
+~ Switch back to the original branch or timeline
+~ Ex. git checkout branch_name
+
+$ git merge
+~ Merge a branch with the master
+~ Ex. git merge branch_name 
+
+$ git remote add origin
+~ First you need to create a new repository in GitHub, assign a name to it and copy the url next to the Git commands
+~ git remote add origin git_repo_url
+
+$ git push -u origin master
+~ Upload the commited files into the orign repo for the first time
+
+$ git clone
+~ Download a project from GitHub into another folder of the computer
+~ Ex. git clone url_name
+
+$ git pull
+~ Update your project (folder) with the most recent version of the repo
