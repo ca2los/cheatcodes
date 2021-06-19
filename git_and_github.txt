@@ -42,6 +42,10 @@ $ git remote add origin
 $ git push -u origin master
 ~ Upload the commited files into the orign repo for the first time
 
+    $ ssh-add
+    ~ Only when GitHub shows you:270286
+    "fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists." 
+
 $ git clone
 ~ Download a project from GitHub into another folder of the computer
 ~ Ex. git clone url_name
