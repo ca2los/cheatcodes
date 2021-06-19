@@ -9,7 +9,7 @@ _
 # Attention:
 # 1st line with symbol "$" shows the single command(s)
 # 2nd line with symbol "~" explains the meaning of the command(s)
-# 3rd line with symbol "$" is/are the final command(s) you must type/paste at the Terminal
+# 3rd line with symbol "$" is/are for the final command(s) you must type/paste at the Terminal
 _
 
 1. In this How-To you will: 
