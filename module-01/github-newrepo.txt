@@ -27,7 +27,7 @@ _
     ~ Marks every listed file as ready to commit, only when new or edited files are detected
 
     $ git commit
-    ~ Confirms the files (previusly added) as ready to push
+    ~ Confirms the files (previously added) as ready to push
 
     $ git remote add origin
     ~ First you need to create a new repository in GitHub, assign a name to it and copy the url next to the Git commands
