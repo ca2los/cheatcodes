@@ -88,10 +88,11 @@ _
 
     $ git fork
     ~ The action that copies a repository in your personal GitHub account, but linked to the original repo.
+    $ git fork ssl_url_name
 
     $ git clone
     ~ The action to download a project (recommended after forking), from GitHub to a specific folder of your local (computer)
-    $ git clone url_name
+    $ git clone ssl_url_name
 
     $ git pull
     $ Update your project (folder) with the most recent version of the repository
