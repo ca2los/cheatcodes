@@ -90,7 +90,7 @@ _
     ~ The action that copies a repository in your personal GitHub account, but linked to the original repo.
 
     $ git clone
-    ~ The action to download a project (recommended after forking) from GitHub to a specific folder of your local (computer)
+    ~ The action to download a project (recommended after forking), from GitHub to a specific folder of your local (computer)
     $ git clone url_name
 
     $ git pull
