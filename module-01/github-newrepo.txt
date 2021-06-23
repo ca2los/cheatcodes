@@ -1,8 +1,8 @@
 <!-- GitHub -->
 
 # Follow the steps if you want to create a project and upload it to GitHub
-# Before you start, make sure you have Brew, Git, and SSH keys installed already
-# If you need help installing the tools, click on the link below:
+# Before you start, make sure you have Brew, Git, and SSH keys already installed
+# If you need help installing the tools, click on the link below for visual guidance:
 # https://github.com/ca2los/cheatcodes/install_git.txt
 _
 
@@ -86,8 +86,11 @@ _
 
 4. You can download a repository from another owner/author into you computer (local)
 
+    $ git fork
+    ~ The action that copies a repository in your personal GitHub account, but linked to the original repo.
+
     $ git clone
-    ~ Download a project (fork) from GitHub into another folder of the computer
+    ~ The action to download a project (recommended after forking) from GitHub to a specific folder of your local (computer)
     $ git clone url_name
 
     $ git pull
