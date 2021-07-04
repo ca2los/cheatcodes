@@ -1,5 +1,5 @@
 # CHEATCODES
-This repository contains the most common commands, with explanations and examples learnt at the Bootcamp Spot. Please, if you find it useful then feel free to pull the repository. You can also participate and improve the content with your approach and knowledge.
+This repository contains the most common commands, with explanations and examples learnt at the Bootcamp Spot. Please, if you find it useful then feel free to share the repository. You can also participate and improve the content with your approach and knowledge.
 
 ### TABLE OF CONTENTS: 
 
