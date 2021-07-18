@@ -66,13 +66,13 @@ let var_name_07 = document.querySelector('#id_name_07');
 ```
 
 ``` javascript
-// Appends attributes to a specific NODE in the HTML, like styles, images, alts, and others.
+// Appends attributes to a specific NODE in the HTML, like styles, images, alts, CLASS, ID and others.
 .setAttribute('','');
 
 var_name_05.setAttribute('style','background:#000;color:#fff;margin:0 auto;');
 var_titles.setAttribute('style','font-size:2em,line-height:1.4;text-align:center;');
 var_images.setAttribute('src','https://www.pathtotheimage.com');
-var_div.setAttribute('style','width:90%;padding:0 5%';);
+var_div.setAttribute('class','box';);
 var_name_06.children[0].setAttribute('style','display:flex;flex-direction:row;');
 ``` 
 
@@ -107,20 +107,99 @@ document.body.children[0].children[1].children[2] = 'Option #3';
 ```
 
 ``` javascript
+// Listen when a specific element is clicked
+.addEventListener('type','options'); 
+
+let var_btn = document.getElementById('button_id_name');
+let var_bg  = "black";
+
+var_btn.addEventListener('click',function(){
+    if (var_bg === 'black') {
+        document.style.background = "#fff";
+    }
+    else {
+        document.setAttribute('style','background:#000;')
+    }
+});
 
 ``` 
 
 ``` javascript
+// ANONYMOUS functions are created to be executed at any moment
+function(){}
+
+let var_btn = document.getElementById('button_id_name');
+var_btn.addEventListener('click',function(){
+    ...
+});
 ``` 
 
 ``` javascript
+//  It will cancels the event and any action in the program will not occur.
+.preventDefault()
+
+function validation(event){
+    event.preventDefault();
+    document.children[2].children[0].textContainer = "Now any default action will not occur.";
+    console.log(event);
+}
+document.getElementById('button_id_name').addEventListener('click',validation);
 ``` 
 
 ``` javascript
+//  It prevents and cancels a specific interaction from the user, like click, scroll, wheel scroll
+.cancelable
+
+function validation(event){
+    event.cancelable;
+    document.children[2].children[0].textContainer = "It cancels only the assiociated event.";
+    console.log(event);
+}
+document.getElementById('button_id_name').addEventListener('click',validation);
 ``` 
 
 ``` javascript
+// Retrieves the value from a HTML, like a PROMPT dialog box or a FORM input text
+.value
+
+let amount = document.getElementById('input_01');
+let price  = document.getElementById('input_02');
+
+function buy() {
+    let total = amount.value * price.value;
+    return total;
+}
+buy();
+
 ``` 
+
+``` javascript
+// IIFE replace the arguments of the function and replace them with the values of the chosen variables
+
+function func_name(arg1, arg2) {
+    return arg1 + arg2;
+}
+
+let var_name_02 = func_name("This is an ", "IIFE Function!");
+console.log(var_name_02);
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+``` javascript
+``` 
+
 
 
 
