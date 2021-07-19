@@ -28,8 +28,8 @@ console.log(document.body.children[0].children[2]);
 ``` 
 
 ``` javascript
-// Retrieves an ID element from a HTML NODE, for example:
 .getElementById('') 
+// Retrieves an ID element from a HTML NODE, for example:
 
 let var_name_01 = document.getElementById('id_name_01'); 
 let var_name_02 = document.getElementById('id_name_02');
@@ -38,8 +38,8 @@ let var_name_04 = document.getElementById('id_name_04');
 ```  
 
 ``` javascript
-// Direct styling for the HTML NODE, for example:
 .style.style_property = '';
+// Direct styling for the HTML NODE, for example:
 
 var_name_01.style.background = '#fff';
 var_name_02.style.color = '#000';
@@ -48,8 +48,8 @@ var_name_04.children[3].style.padding = '20px';
 ``` 
 
 ``` javascript
-// Retrieves all the elements that match ALL the CLASSes or TAGs inside the HTML.
 .querySelectorAll('')   
+// Retrieves all the elements that match ALL the CLASSes or TAGs inside the HTML.
 
 let var_name_05 = document.querySelectorAll('.class_05');
 let var_titles  = document.querySelectorAll('h1');
@@ -58,16 +58,16 @@ let var_div     = document.querySelectorAll('div');
 ```
 
 ``` javascript
-// Retrieves a specific element from the HTML matching the ID, CLASS or TAG.
 .querySelector('')  
+// Retrieves a specific element from the HTML matching the ID, CLASS or TAG.
 
 let var_name_06 = document.querySelector('.class_06');
 let var_name_07 = document.querySelector('#id_name_07');  
 ```
 
 ``` javascript
-// Appends attributes to a specific NODE in the HTML, like styles, images, alts, CLASS, ID and others.
 .setAttribute('','');
+// Appends attributes to a specific NODE in the HTML, like styles, images, alts, CLASS, ID and others.
 
 var_name_05.setAttribute('style','background:#000;color:#fff;margin:0 auto;');
 var_titles.setAttribute('style','font-size:2em,line-height:1.4;text-align:center;');
@@ -77,8 +77,8 @@ var_name_06.children[0].setAttribute('style','display:flex;flex-direction:row;')
 ``` 
 
 ``` javascript
-// Creates (only) a new element or NODE inside another NODE in the HTML.
 .createElement('')
+// Creates (only) a new element or NODE inside another NODE in the HTML.
 
 let var_name_01 = document.body.createElement('header');
 let var_name_02 = document.body.children[0].createElement('h1');
@@ -87,8 +87,8 @@ let var_name_04 = document.body.children[0].children[1].createElement('li');
 ```
 
 ``` javascript
-// Appends a created element or NODE inside another NODE of the HTML <body>.
 .appendChild()
+// Appends a created element or NODE inside another NODE of the HTML <body>.
 
 document.body.appendChild('var_name_01');
 document.body.children[0].appendChild('var_name_02');
@@ -97,8 +97,8 @@ document.body.children[0].children[1].appendChild('var_name_04');
 ```
 
 ``` javascript
-// Appends a new line of text inside an element or NODE.
 .textContent = ''
+// Appends a new line of text inside an element or NODE.
 
 document.body.children[0].children[0].textContent = 'Title';
 document.body.children[0].children[1].children[0] = 'Option #1';
@@ -107,8 +107,8 @@ document.body.children[0].children[1].children[2] = 'Option #3';
 ```
 
 ``` javascript
+.addEventListener('click','options'); 
 // Listen when a specific element is clicked
-.addEventListener('type','options'); 
 
 let var_btn = document.getElementById('button_id_name');
 let var_bg  = "black";
@@ -125,8 +125,8 @@ var_btn.addEventListener('click',function(){
 ``` 
 
 ``` javascript
-// ANONYMOUS functions are created to be executed at any moment
 function(){}
+// ANONYMOUS functions are created to be executed at any moment
 
 let var_btn = document.getElementById('button_id_name');
 var_btn.addEventListener('click',function(){
@@ -135,8 +135,8 @@ var_btn.addEventListener('click',function(){
 ``` 
 
 ``` javascript
-//  It will cancels the event and any action in the program will not occur.
 .preventDefault()
+//  It will cancels the event and any action in the program will not occur.
 
 function validation(event){
     event.preventDefault();
@@ -147,8 +147,8 @@ document.getElementById('button_id_name').addEventListener('click',validation);
 ``` 
 
 ``` javascript
-//  It prevents and cancels a specific interaction from the user, like click, scroll, wheel scroll
 .cancelable
+//  It prevents and cancels a specific interaction from the user, like click, scroll, wheel scroll
 
 function validation(event){
     event.cancelable;
@@ -159,8 +159,8 @@ document.getElementById('button_id_name').addEventListener('click',validation);
 ``` 
 
 ``` javascript
-// Retrieves the value from a HTML, like a PROMPT dialog box or a FORM input text
 .value
+// Retrieves the value from a HTML, like a PROMPT dialog box or a FORM input text
 
 let amount = document.getElementById('input_01');
 let price  = document.getElementById('input_02');
@@ -170,32 +170,109 @@ function buy() {
     return total;
 }
 buy();
-
 ``` 
 
 ``` javascript
-// IIFE replace the arguments of the function and replace them with the values of the chosen variables
-
 function func_name(arg1, arg2) {
     return arg1 + arg2;
 }
+// IIFE replace the arguments of the function and replace them with the values of the chosen variables
 
 let var_name_02 = func_name("This is an ", "IIFE Function!");
 console.log(var_name_02);
 ``` 
 ``` javascript
+.addEventListener('keydown','options');
+// Listen when the key of the keyboard is clicked
+
+<textarea rows="5" name="test" id="textarea"></textarea>
+
+let typing = document.getElementById('textarea');
+typing.addEventListener('keydown',function(event){
+    console.log(event.key + "key is pressed.");
+}); 
+``` 
+
+``` javascript
+.addEventListener('keyup','options');
+// Listen when the key of the keyboard is clicked
+
+let typing = document.getElementById('textarea');
+typing.addEventListener('keyup',function(event){
+    console.log(event.key + "key is released.");
+}); 
+``` 
+
+``` javascript
+.addEventListener('change','options');
+// Listen when an option a select tag has changed
+
+typing.addEventListener('change',function(event){
+    ...
+}); 
+``` 
+
+``` javascript
+.includes()
+// Includes is a method to validate a value inside an array.
+
+let var_name_01 = ['a','b','c','d','e','f','g'];
+let var_name_02 = [0123456789];
+
+console.log(var_name_01.includes('c'));     // TRUE
+console.log(var_name_01.includes('z'));     // FALSE
+console.log(var_name_02.includes(1));       // TRUE
+console.log(var_name_02.includes(z));       // FALSE
+``` 
+
+``` javascript
+.currentTarget
+// Commonly used with Event Listeners to attach the same event to several elements.
+
+let var_name_01 = document.querySelectorAll('p');
+var_name_01.addEventListener('click',function(event){
+    event.currentTarget.setAttribute('style','color:#000;font-size:30px;');
+});
+``` 
+
+``` javascript
+.target
+// A reference of the object 
+``` 
+
+``` javascript
+.matches()
+// Method to check if the element is selected
+``` 
+
+``` javascript
+.dataset()
+// Exposes a map of strings for each data-* attribute inside the HTML
+``` 
+
+``` javascript
+localStorage.getItem()
+// Used to obtain the storaged value, the data won't disappear after refreshing the browser.
+
+let var_name_01 = localStorage.getItem('bg');
+document.getElementById('bg').value = var_name_01
+``` 
+
+``` javascript
+localStorage.setIten('keyname','keyvalue')
+// Used to define the value to storage, the data won't disappear after refreshing the browser.
+
+function func_name(){
+    localStorage.setItem('bgcolor','black');
+}
+```
+
+``` javascript
+.stopPropagation()
+// It's a method of the EVENT to stop the bubbling. 
 ``` 
 ``` javascript
-``` 
-``` javascript
-``` 
-``` javascript
-``` 
-``` javascript
-``` 
-``` javascript
-``` 
-``` javascript
+index
 ``` 
 ``` javascript
 ``` 
